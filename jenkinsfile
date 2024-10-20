@@ -1,0 +1,15 @@
+pipeline {
+ agent any
+     stages{
+             stage{
+                    step('build'){
+                                      bat 'javac Hel.java'
+          }
+}
+stage{
+      step('run'){
+                    bat 'Hel.java'
+}
+}
+}
+}
